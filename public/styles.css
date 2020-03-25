@@ -181,3 +181,82 @@ footer p {
 ::selection {
   background-color: #caedff;
 }
+
+/* Night Mode */
+
+.night-mode body{
+  background-color: #17171a;
+}
+
+.night-mode h1, 
+.night-mode h2{
+  color: #fff;
+}
+
+.night-mode header p {
+color: #ccc;
+transition: all 0.5s ease;
+}
+.night-mode .donor p,
+.night-mode footer p {
+  color: #fff;
+}
+
+.night-mode footer {
+  border-top: 1px solid #272727;
+  background-color: #202024;   
+}
+
+.night-mode ::selection {
+  background-color: #7700ff;
+  color: #fff;
+}
+
+/* Switch */
+.switch-container {
+  position: fixed;
+  right: 70px;
+  bottom: 20px;
+}
+
+.switch {
+  visibility: hidden;
+  position: absolute;
+  margin-left: -9999px;
+}
+
+.switch + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+.switch-mode + label {
+  height: 50px;
+}
+
+.switch-mode + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+}
+
+.switch-mode + label:after {
+  content: '🌓';
+  width: 50px;
+  background-color: #000;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s;
+  padding-top: 12px;
+}
+
+.switch-mode:checked + label:after {
+  background-color: #ffffff;
+}
+
+
