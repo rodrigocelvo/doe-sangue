@@ -6,11 +6,11 @@ server.use(express.urlencoded({ extended: true }));
 
 const Pool = require('pg').Pool;
 const db = new Pool({
-  user: 'postgres',
-  password: '0000',
+  user: 'username',
+  password: 'password',
   host: 'localhost',
   port: 5432,
-  database: 'doe'
+  database: 'my_db'
 });
 
 const nunjucks = require('nunjucks');
